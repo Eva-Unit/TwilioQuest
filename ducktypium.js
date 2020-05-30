@@ -2,11 +2,10 @@
 class Ducktypium {
     constructor(color) {
         this.color = color;
-        this.calibrationSequence = new Array();
         if (this.color != "red" && this.color != "blue" && this.color != "yellow") {
             throw ("Color must be red, blue or yellow");
         }
-
+        this.calibrationSequence = [];
     }
 
 
@@ -31,10 +30,12 @@ class Ducktypium {
 
     }
     calibrate(arr) {
+        let newarr = [];
         arr.sort()
         arr.map(function (element) {
-            calibrationSequence.push(element * 3);
-        })
+            newarr.push(element * 3);
+        }); this.calibrationSequence = newarr;
+
     }
 
 }
