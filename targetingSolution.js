@@ -1,10 +1,16 @@
 class TargetingSolution {
-    constructor(x, y, z) {
-        function target() {
-            return ("(" + x + ", " + y + ", " + z + ")")
-        }
+    constructor(config) {
+        this.config = config;
+        this.x = config.x;
+        this.y = config.y;
+        this.z = config.z
     }
-    // your code here
+
+    target() {
+        return "(" + this.x + ", " + this.y + ", " + this.z + ")"
+
+
+    }
 }
 
 // The following lines of code are not required for the solution, but can be

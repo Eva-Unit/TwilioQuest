@@ -8,3 +8,4 @@ function addFirstToLast(inputArray) {
 
     return firstAndLast;
 }
+console.log(addFirstToLast(["Hello", "My", "Baby"]))
